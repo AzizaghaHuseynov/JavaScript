@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <style>
+
+body {
+  background-color: peru;
+
+}
+
+.grid-element {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: none;
+
+}
+
+.row-element {
+  display: inline-flex;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.cell-element {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 30px;
+
+}
+
+.add-button {
+  cursor: pointer;
+}
+
+
+.game-name {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.results-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 30px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="game-name">Tic Tac Toe</div>
+  
+
+    <!-- 
+    <button class="add-button js-addd">Add</button>
+    -->
+    <div class="js-grids grid-element"></div>
+
+    <div class="js-results results-text"></div>
+
+    <script src="scripts/project-Tic-Tac-Toe.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stopwatch</title>
+
+    <style>
+
+      body {
+        background-color: darkgoldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+      }
+
+
+      .stopwatch-text {
+        color: black;
+        font-size: 40px;
+        font-family:'Courier New', Courier, monospace;
+        background-color: darkgoldenrod;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+      }
+
+      .show-time {
+        color: blue;
+        background-color: darkgoldenrod;
+        text-align: center;
+        font-size: 70px;
+        padding-top: 15px;
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .start-button,
+      .stop-button,
+      .reset-button {
+        color: black;
+        background-color: rgb(89, 202, 78);
+        font-size: 20px;
+        border-radius: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+      }
+
+
+      .stop-button {
+        background-color: yellow;
+      }
+
+      .reset-button {
+        background-color: red;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .resume-button {
+        background-color: blue;
+        font-size: 15px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+      }
+
+      .all-buttons {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+      }
+
+
+      .lap-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="stopwatch-text">Stopwatch</div>
+
+    <div class="show-time js-show-time"></div>
+
+    <div class="all-buttons">
+
+    <button class="start-button js-start-button" onclick="startTime()">
+      Start
+    </button>
+
+    <button class="reset-button js-reset-button" disabled onclick="secondButton()">
+      Lap
+    </button>
+
+  </div>
+
+  <div class="js-lap-list lap-grid"></div>
+
+  <div class="js-err-message"></div>
+
+
+    <script src="scripts/project1-stopwatch.js"></script>
+  </body>
+
+
+</html>
